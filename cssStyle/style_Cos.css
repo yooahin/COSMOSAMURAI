@@ -1,0 +1,106 @@
+header{
+    height: 150px;
+    padding: 0px 20px 0px 20px;
+}
+#logo{
+      border-bottom : 1px solid black;
+      text-align: center;
+      margin-top: 14%;
+}
+#coverPic{
+      text-align: center;
+      margin-bottom: 10px;
+      width: 100%;
+      
+}
+.quoteStyle{
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 80%;
+      color: rgb(161, 102, 43);
+      font-weight: bold;
+
+}
+nav{
+      background-color: darkblue;
+      margin: 0px;
+      text-align: center;
+      width: 100%;
+}
+nav ul li{
+      display: inline;
+      padding: 10px;
+      margin: none;
+}
+nav ul li a:link,nav ul li a:visited {
+      color: peru;
+      border-bottom: none;
+      font-weight: bold;
+}
+nav ul li.selected{
+      background-color: darkgoldenrod;
+}
+
+.panel {
+      margin:0px;
+  }
+      
+.aaa{
+      width:70%;
+      line-height:0px;
+      overflow:hidden;
+      float: left;
+  }
+
+.abusBox{
+      background-color: darkblue;
+      width: 30%;
+      float: left;
+}
+.aboutUs{
+      padding: 0px 2px;
+      display: table-cell;
+      vertical-align: middle;
+      background-color: peru;
+      color: darkblue;
+      font-weight: bold;
+      font-size: small;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      word-wrap: break-word;
+      overflow: hidden;
+}
+#footer{
+      padding: 1px;
+      background-color: white;
+      text-align: center;
+      font-size: 75%;
+      clear: both;
+      margin: 10px;
+}
+body{
+      font-family:sans-serif;
+      font-size: normal;
+      line-height: 1.6em;
+      text-align: center;
+      margin:0 auto;
+ }           
+h2  {    
+      font-size: 130%;
+      color:black;
+}
+h1 { 
+      font-size: 220%;
+}
+li{
+      list-style: none;
+}
+ul{
+      padding: 0;
+      margin: 0;
+}
+          
+p {
+      color : black; 
+}
+
