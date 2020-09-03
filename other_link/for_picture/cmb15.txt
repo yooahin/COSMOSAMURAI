@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>pic_cmb15</title>
+        <style type="text/css"> body
+            {
+               background-color:#eaf3da;
+            }
+        </style>
+    </head>
+    
+     <body>
+        <h1>CMB Planck 2015 results</h1>
+        <p>
+        <img src="../../picture/CMB15.png" alt = "Picture of CMB Planck 2015 results">
+        </p>
+     </body>
+
+</html>
