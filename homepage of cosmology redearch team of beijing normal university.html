@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>homepage for cosmology team</title>
+        
+   
+        <link type="text/css" rel="stylesheet" href="./cssStyle/style_Cos.css">
+      
+    </head>
+
+    <body>
+        <header>
+           <div id="logo">
+              <img src= "thumbnail/logo.png" height="150" alt="logo for Cosmo samurai">  
+           </div> 
+        </header>
+         
+         <blockquote class='quoteStyle'>
+            The way ahead is so long without ending, yet high and low I'll search with my will unbending.
+         </blockquote>
+         <div id="coverPic">
+            <a href = "other_link/for_picture/cmb15.html">
+            <img src="thumbnail/CMB15.gif"  width="600"
+                  alt="The The 2015 Planck map of the temeprature anisotropies of the CMB, 
+                       extracted using the SMICA method. The gray outline shows the extent
+                       of the confidence mask."></a>
+         </div>
+         <script type="text/javascript" src="jsFile/showTime.js"></script>
+
+         <nav>
+            <ul>
+               <li><a href="https://en.wikipedia.org/wiki/Cosmology#:~:text=Cosmology%20(from%20the%20Greek%20%CE%BA%CF%8C%CF%83%CE%BC%CE%BF%CF%82,eventual%20fate%20of%20the%20universe.">COSMOLOGY</a></li>
+               <li><a href="other_link/member.html">MEMBERS</a></li>
+               <li><a href="other_link/tradition.html">CURRENT FOCUS</a></li>
+               <li><a href="other_link/talks.html">TALKS</a></li>
+               <li><a href="other_link/boke.html">BLOGS</a></li>
+            </ul>
+         </nav>     
+         <div class="panel">
+             <div class="aaa">
+               <ul>
+                  <li><img src="./picture/homePagePic/chain2dream.jpg" width=100%  alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/chair2.jpg" width=100% alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/chairs.jpg" width=100% alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/Food.jpg" width=100% alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/InMemoryofMyLife.jpg" width=100% alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/NeverKnowWhatIhaveSeen.jpg" width=100% alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/sheepPeekYou.jpg" width=100% alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/viewFromPlane.jpg" width=100% alt="Be reckless. Live for the moment"></li>
+                  <li><img src="./picture/homePagePic/byeMyTriest.jpg" width=100% alt="Be reckless. Live for the moment."></li>
+               </ul>
+            </div>
+
+            <div class="abusBox">
+               <p class="aboutUs">
+                  We are a cosmology research group from Beijing Normal University.
+                  Our researches focus on large scale structure of the universe, dark energy, dark matter, 
+                  as well as cosmological application of machine learning. Please <a href="mailto:xiajq@bnu.edu.cn">contact us</a> 
+                  for further inforamation.
+               </p>
+            </div>
+         </div>
+   
+  <footer id="footer">
+        &copy; 2020, COSMOSAMURAI, designed by Mills
+  </footer>
+
+  <script>
+     var winWidth = document.body.clientWidth;
+     var afterMargLeftRight = 0.6*winWidth;
+
+     //window.alert(winWidth);
+     $("body").css("width",afterMargLeftRight);
+     //$("body").css("marginLeft", margLeftRight);
+     //$("body").css("marginRight", margLeftRight);
+     var panelWidth = $(".panel").width();
+     var picWid = panelWidth*0.70;
+     var aboutUsBoxWid = panelWidth*0.30;
+     var picHit = picWid/1920.0*1080.0;
+     $(".aaa").css("height",picHit); 
+     $(".aboutUs").css("width",aboutUsBoxWid); 
+     $(".aboutUs").css("height",picHit);  
+     $("nav")
+   //window.alert(picWid);
+   //连续滚动，记住初始位置，animate函数会以动画的形式逐渐转换成目标形式，还有一个callback,   
+      function timer(opj) {
+          $(opj).find('ul').animate({
+              marginTop: -picHit
+          }, 1000, function() {
+              $(this).css({
+                  marginTop: "0px"
+              }).find("li:first").appendTo(this);
+          })
+      };
+      $(function() {
+          var time = setInterval('timer(".aaa")', 4000); //新闻列表滚动
+          $('.aaa ul').find('li').mousemove(function() {
+              clearInterval(time);
+          }).mouseout(function() {
+              time = setInterval('timer(".aaa")', 3000);
+          });
+      });
+
+
+   </script>    
+  <!--
+     <script type="text/javascript" src="jsFile/rollingPic.js"></script>
+         <a href="data:text/html, <html contenteditable>" target="_blank>">use your browser as a notepad</a>
+         <div contenteditable="true">
+            This text can be edited by the user.
+          </div>
+  -->       
+
+</body></html>
